@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0277BD">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0277BD">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0277BD">
+
+    <title>Taipei Swimming Association for the Disabled</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style-en.css">
+    
+    <style>
+      .container {
+        position: relative;
+      }
+      .navbar {
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5)
+      }
+      .homepage-slides img {
+        position: absolute;
+        width: 100%;
+        display: flex;
+      }
+      h1 {
+        width: 450px;
+        display: inline-block;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        color: blue;
+      }
+      #line {
+        width: 500px;
+        display: inline-block;
+        background-color: aqua;
+        height: 3px;
+        position: absolute;
+        right: 0;
+        transition: 0.4;
+        top: 150px;
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body bgcolor=#dedede onresize="allFunctionsForResize()">
+
+    <div class="navbar">
+      <a id="icon" href="index-en.html">
+        <i class="material-icons" style="font-size: 30px; color: #ffffff">home</i>
+      </a>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">About Us
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="1-about-en.html">Why Swim?</a>
+          <a href="1-about-en.html#mission-statement">Mission Statement</a>
+          <a href="1-about-en.html#spirit">Spirit</a>
+          <a href="1-about-en.html#goals">Goals</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Coaches
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="2-coaches-en.html">Li Yuhui</a>
+          <a href="2-coaches-en.html">Chen Lunzhong</a>
+          <a href="2-coaches-en.html">Chen Congjian</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Disabilities FYI
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="3-disabilities-en.html">Down Syndrome</a>
+          <a href="3-disabilities-en.html#autism">Autism Spectrum Syndrome</a>
+          <a href="3-disabilities-en.html#physically-disabled">Physical Disabilities</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Class Information
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="4-info-en.html">Schedule</a>
+          <a href="4-info-en.html">Location</a>
+          <a href="4-info-en.html#who-we-serve">Who we serve</a>
+          <a href="4-info-en.html">Events</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Stories
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="5-story-en.html">History</a>
+        </div>
+      </div>
+      <a href="index.html" id="language"><i class="material-icons">language</i> 中文</a>
+    </div>
+      <div class="container">
+      <div class="homepage-slides">
+        <img src="https://i.imgur.com/h3Xpowl.png">
+      </div>
+      <div id="homepage-title">
+        <h1>Taipei Swimming Association for the Disabled</h1>
+        <div id="line"></div>
+      </div>
+    </div>
+
+    <div id="screen-dim"></div>
+
+    <script src="script.js"></script>
+    <script>
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,41 @@
+#header {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+#icon { /* Icon Link */
+  padding: 7.5px 10px;
+}
+.dropdown .dropdown-button { /* Button */
+  height: 46px;
+}
+.dropdown-content a { /* Content Links */
+  font-size: 16px;
+}
+h2 {
+  font-size: 25px;
+}
+p, table, ul {
+  font-size: 16px;
+}
+ul {
+  text-align: left;
+  margin-left: 15px;
+}
+.first {
+  margin-top: 156px;
+}
+.statement {
+  font-size: 16px;
+}
+#bottom-bar a, #bottom-text-bar a {
+  font-size: 18px;
+}
+#language {
+  font-size: 20px;
+  padding: 10px 16px;
+  height: 26px;
+}
+i {
+  vertical-align: text-bottom;
+}

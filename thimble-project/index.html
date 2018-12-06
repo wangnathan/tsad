@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="zh-Hant">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0277BD">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0277BD">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0277BD">
+
+    <title>臺北市身心障礙游泳協會</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&amp;subset=chinese-traditional" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-zh.css">
+  </head>
+
+  <body bgcolor=#dedede onresize="allFunctionsForResize()">
+    <center id="heading">
+      <div class="header-container">
+        <div class="menu-container" onclick="openSideNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <h1 id="header"><a href="index.html">臺北市身心障礙游泳協會</a></h1>
+        <div id="overlay">
+          <a href="index.html">
+            <img id="header-img" src="https://i.imgur.com/0vCtpdn.png" height=60px align="left">
+          </a>
+        </div>
+      </div>
+    </center>
+
+    <div class="navbar">
+      <a id="icon" href="index.html">
+        <i class="material-icons" style="font-size: 30px; color: #ffffff">home</i>
+      </a>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">關於我們
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="1-about-zh.html">為什麼游泳？</a>
+          <a href="1-about-zh.html#mission-statement">宗旨</a>
+          <a href="1-about-zh.html#spirit">精神</a>
+          <a href="1-about-zh.html#goals">目標</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">教練
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="2-coaches-zh.html">李育慧</a>
+          <a href="2-coaches-zh.html">陳倫中</a>
+          <a href="2-coaches-zh.html">陳聰鑑</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">認識身心障礙 
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="3-disabilities-zh.html">唐氏綜合症</a>
+          <a href="3-disabilities-zh.html#autism">自閉症</a>
+          <a href="3-disabilities-zh.html#physically-disabled">身體殘疾</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">上課資訊
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="4-info-zh.html">時間表</a>
+          <a href="4-info-zh.html">地點</a>
+          <a href="4-info-zh.html#whom-we-serve">為誰服務</a>
+          <a href="4-info-zh.html#events">活動</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">故事
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="5-story-zh.html#history">歷史</a>
+        </div>
+      </div>
+      <a href="index-en.html" id="language"><i class="material-icons">language</i> English</a>
+    </div>
+    
+    <div id="screen-dim"></div>
+
+    <div id="sidenav" class="nav-overlay">
+      <div class="nav-overlay-content">
+        <div class="menu-container" onclick="closeSideNav()">
+          <div class="bar1"></div>
+          <div class="bar3"></div>
+        </div>
+        <a href="index.html" id="first-dropbutton">
+          <i class= material-icons>home</i> 主頁
+        </a>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>info</i> 關於我們
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="1-about-zh.html">為什麼游泳？</a>
+          <a href="1-about-zh.html#mission-statement">宗旨</a>
+          <a href="1-about-zh.html#spirit">精神</a>
+          <a href="1-about-zh.html#goals">目標</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>people</i> 教練
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="2-coaches-zh.html">李育慧</a>
+          <a href="2-coaches-zh.html">陳倫中</a>
+          <a href="2-coaches-zh.html">陳聰鑑</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>accessible</i> 認識身心障礙 
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="3-disabilities-zh.html">唐氏綜合症</a>
+          <a href="3-disabilities-zh.html#autism">自閉症</a>
+          <a href="3-disabilities-zh.html#physically-disabled">身體殘疾</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>list</i> 上課資訊
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="4-info-zh.html">時間表</a>
+          <a href="4-info-zh.html">地點</a>
+          <a href="4-info-zh.html#whom-we-serve">為誰服務</a>
+          <a href="4-info-zh.html#events">活動</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>subject</i> 故事
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="5-story-zh.html#history">歷史</a>
+        </div>
+        <a href="index-en.html" id="language"><i class="material-icons">language</i> English</a>
+      </div>      
+    </div>
+    
+    <center>
+      <div class="content first" id="introduction">
+        <div class="slides">
+          <img class="slideshow" id="slide-1" src="https://i.imgur.com/h3Xpowl.png" style="width:100%">
+          <img class="slideshow" id="slide-2" src="https://i.imgur.com/O4cgnIl.png" style="width:100%">
+          <img class="slideshow" id="slide-3" src="https://i.imgur.com/Ai0JWaj.png" style="width:100%">
+          <img class="slideshow" id="slide-4" src="https://i.imgur.com/72VhiGr.png" style="width:100%">
+        </div>
+        <p style="margin-top: 10px">運動是健康不可或缺的一環，但有很多身心障礙的孩子都沒有足夠的運動。臺北市身心障礙游泳協會希望藉由免費游泳教學來讓身心障礙的孩子們更健康。游泳可以增強肌肉，提高柔軟度，增加肺活量對身體的益處良多。不怕學不會，協會中有許多熱心的志工教練和有超過二十年經驗的陳倫中教練。不管是自閉症，唐氏症，肢體殘缺還是任何其他的障礙，只要有心就一定學的了。陳教練認為家長經常在這裡上課不只是學游泳，學會自己上廁所換衣服洗澡，上課守規定也是重要目標。</p>
+
+        <p class="last">協會每周一到六都有在五常國中為身心障礙的朋友提供免費游泳教學，只要領有身心障礙手冊者，均可加入協會，並接受免費培訓。如果希望參加課程或加入志工教練的行列請參考下面的聯絡資訊。</p>
+      </div>
+    </center>
+
+    <div id="bottom-text-bar">
+      <a href="index-en.html" id="bottom-text"><i class="material-icons">language</i> English</a>
+    </div>
+    <div id="bottom-bar-container">
+      <div id="bottom-bar">
+        <a href="index-en.html"><i class="material-icons">language</i> English</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      slidesResize();
+      window.addEventListener("resize", slidesResize);
+      carousel();
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,41 @@
+#header {
+  font-size: 32px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+}
+#icon { /* Icon Link */
+  padding: 8.5px 10px;
+  font-size: 0;
+}
+.dropdown-content a { /* Content Links */
+  font-size: 17px;
+}
+h2 {
+  font-size: 30px;
+}
+p, table, ul {
+  font-size: 19px;
+}
+ul {
+  max-width: 13em;
+}
+.first {
+  margin-top: 157px;
+}
+.statement {
+  font-size: 20px;
+}
+#bottom-bar a, #bottom-text {
+  font-size: 18px;
+}
+#language {
+  font-size: 18px;
+  padding: 10.5px 16px;
+  height: 26px;
+}
+#language i, #bottom-text i {
+  vertical-align: bottom;
+}
+i {
+  vertical-align: text-bottom;
+}
