@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0277BD">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0277BD">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0277BD">
+
+    <title>Disabilities FYI - Taipei Swimming Association for the Disabled</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-en.css">
+  </head>
+
+  <body bgcolor=#dedede onresize="allFunctionsForResize()">
+    <center id="heading">
+      <div class="header-container">
+        <div class="menu-container" onclick="openSideNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <h1 id="header">
+          <a href="index-en.html">
+            Taipei Swimming Association for the Disabled
+          </a>
+        </h1>
+
+        <div id="overlay">
+          <a id="header-img-link" href="index-en.html">
+            <img id="header-img" src="Images/Logos/Logo.png" height=60px align="left">
+          </a>
+        </div>
+      </div>
+    </center>
+
+    <div class="navbar">
+      <a id="icon" href="index-en.html">
+        <i class="material-icons" style="font-size: 30px; color: #ffffff">home</i>
+      </a>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">About Us
+          <i class="material-icons more">expand_more</i>
+        </button>        
+        <div class="dropdown-content">
+          <a href="1-about-en.html">Why Swim?</a>
+          <a href="1-about-en.html#mission-statement">Mission Statement</a>
+          <a href="1-about-en.html#spirit">Spirit</a>
+          <a href="1-about-en.html#goals">Goals</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Coaches
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="2-coaches-en.html">Li Yuhui</a>
+          <a href="2-coaches-en.html">Chen Lunzhong</a>
+          <a href="2-coaches-en.html">Chen Congjian</a>
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Disabilities FYI
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="3-disabilities-en.html">Down Syndrome</a>
+          <a href="3-disabilities-en.html#autism">Autism Spectrum Syndrome</a>
+          <a href="3-disabilities-en.html#physically-disabled">Physical Disabilities</a>
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Class Information
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="4-info-en.html">Schedule</a>
+          <a href="4-info-en.html">Location</a>
+          <a href="4-info-en.html#who-we-serve">Who we serve</a>
+          <a href="4d-events-en.html">Events</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown(this)" onmouseover="darkenDropdown(this)" onmouseout="lightenDropdown(this)">Stories
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="dropdown-content">
+          <a href="5-story-en.html">History</a>
+        </div>
+      </div>
+      
+      <a href="3-disabilities-zh.html" id="language"><i class="material-icons">language</i> 中文</a>
+    </div>
+    
+    <div id="screen-dim"></div>
+
+    <div id="sidenav" class="nav-overlay">
+      <div class="nav-overlay-content">
+        <div class="menu-container" onclick="closeSideNav()">
+          <div class="bar1"></div>
+          <div class="bar3"></div>
+        </div>
+        <a href="index-en.html" id="first-dropbutton">
+          <i class= material-icons>home</i> Home
+        </a>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>info</i> About Us
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="1-about-en.html">Why Swim?</a>
+          <a href="1-about-en.html#mission-statement">Mission Statement</a>
+          <a href="1-about-en.html#spirit">Spirit</a>
+          <a href="1-about-en.html#goals">Goals</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>people</i> Coaches
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="2-coaches-en.html">Li Yuhui</a>
+          <a href="2-coaches-en.html">Chen Lunzhong</a>
+          <a href="2-coaches-en.html">Chen Congjian</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>accessible</i> Disabilities FYI
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="3-disabilities-en.html">Down Syndrome</a>
+          <a href="3-disabilities-en.html#autism">Autism Spectrum Syndrome</a>
+          <a href="3-disabilities-en.html#physically-disabled">Physical Disabilities</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>list</i> Class Information
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="4-info-en.html">Schedule</a>
+          <a href="4-info-en.html#location">Location</a>
+          <a href="4-info-en.html#who-we-serve">Who we serve</a>
+          <a href="4-info-en.html">Events</a>
+        </div>
+        <button class="side-dropbutton" onclick="sideDropdownFunction(this)">
+          <i class= material-icons>subject</i> Stories
+          <i class="material-icons more">expand_more</i>
+        </button>
+        <div class="side-dropdown-container">
+          <a href="5-story-en.html">History</a>
+        </div>
+        <a href="3-disabilities-zh.html" id="language"><i class="material-icons">language</i> 中文</a>
+      </div>      
+    </div>
+
+    <center>
+      <div class="disability">
+        <div class="content first" id="down-syndrome">
+          <button class="disability-button" onclick="toggleDisabilityVisibility(this)" onmouseover="darkenDisabilityButton(this)" onmouseout="lightenDisabilityButton(this)">Down Syndrome
+            <div class="disability-icon-container">
+              <div class="disability-bar1"></div>
+              <div class="disability-bar2"></div>
+            </div>
+          </button>
+          <div class="disability-content">
+            <p class="firsttext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nulla quis erat porta, eu porttitor ante blandit. Nunc laoreet enim eros, vel eleifend neque viverra eu. Duis neque dolor, tempor quis aliquam eu, vestibulum vitae tortor. Cras venenatis lectus vel lacus malesuada, sed consectetur enim tempor. Sed efficitur sollicitudin risus in vehicula. Suspendisse quis lorem lectus. Ut posuere, neque quis tempus venenatis, urna risus semper mi, eget pharetra felis metus et odio. In eu risus eget sapien ultrices lobortis. Pellentesque commodo sem id purus congue consectetur nec scelerisque risus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="disability">
+        <div class="content" id="autism">
+          <button class="disability-button" onclick="toggleDisabilityVisibility(this)" onmouseover="darkenDisabilityButton(this)" onmouseout="lightenDisabilityButton(this)">Autism Spectrum Syndrome
+            <div class="disability-icon-container">
+              <div class="disability-bar1"></div>
+              <div class="disability-bar2"></div>
+            </div>
+          </button>
+          <div class="disability-content">
+            <p class="firsttext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nulla quis erat porta, eu porttitor ante blandit. Nunc laoreet enim eros, vel eleifend neque viverra eu. Duis neque dolor, tempor quis aliquam eu, vestibulum vitae tortor. Cras venenatis lectus vel lacus malesuada, sed consectetur enim tempor. Sed efficitur sollicitudin risus in vehicula. Suspendisse quis lorem lectus. Ut posuere, neque quis tempus venenatis, urna risus semper mi, eget pharetra felis metus et odio. In eu risus eget sapien ultrices lobortis. Pellentesque commodo sem id purus congue consectetur nec scelerisque risus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="disability">
+        <div class="content" id="physical-disabilities">
+          <button class="disability-button" onclick="toggleDisabilityVisibility(this)" onmouseover="darkenDisabilityButton(this)" onmouseout="lightenDisabilityButton(this)">Physical Disabilities
+            <div class="disability-icon-container">
+              <div class="disability-bar1"></div>
+              <div class="disability-bar2"></div>
+            </div>
+          </button>
+          <div class="disability-content">
+            <p class="firsttext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nulla quis erat porta, eu porttitor ante blandit. Nunc laoreet enim eros, vel eleifend neque viverra eu. Duis neque dolor, tempor quis aliquam eu, vestibulum vitae tortor. Cras venenatis lectus vel lacus malesuada, sed consectetur enim tempor. Sed efficitur sollicitudin risus in vehicula. Suspendisse quis lorem lectus. Ut posuere, neque quis tempus venenatis, urna risus semper mi, eget pharetra felis metus et odio. In eu risus eget sapien ultrices lobortis. Pellentesque commodo sem id purus congue consectetur nec scelerisque risus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom-text-bar">
+        <a href="3-disabilities-zh.html" id="bottom-text"><i class="material-icons">language</i> 中文</a>
+      </div>
+
+      <!-- <div id="bottom-bar-container">
+        <div id="bottom-bar">
+          <a href="3-disabilities-zh.html"><i class="material-icons">language</i> 中文</a>
+        </div>
+      </div> -->
+
+      <script src="script.js"></script>
+      <script>
+        window.addEventListener("resize", checkDisabilityContentHeight);
+      </script>
+    </center>
+  </body>
+
+</html>

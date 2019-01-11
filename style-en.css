@@ -1,0 +1,55 @@
+#header {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+#icon { /* Icon Link */
+  padding: 7.5px 10px;
+}
+.dropdown .dropdown-button { /* Button */
+  height: 46px;
+}
+.dropdown-content a { /* Content Links */
+  font-size: 16px;
+}
+h2, .disability-button {
+  font-size: 25px;
+}
+p, table, ul {
+  font-size: 16px;
+}
+ul {
+  text-align: left;
+  margin-left: 15px;
+}
+/*.first {
+  margin-top: 156px;
+}*/
+.statement {
+  font-size: 16px;
+}
+#bottom-bar a, #bottom-text-bar a {
+  font-size: 18px;
+  padding: 12.5px 10px 12.5px 10px;
+}
+.navbar-links {
+  padding: 13px 15px 10px 15px;
+}
+#language {
+  font-size: 20px;
+  padding: 10px 16px;
+  height: 26px;
+}
+i {
+  vertical-align: text-bottom;
+}
+@media screen and (max-width: 1012px) {
+  body {
+    margin-top: 192px;
+  }
+}
+@media screen and (max-width: 489px) {
+  h2, .disability-button {
+    font-size: 20px;
+  }
+}
